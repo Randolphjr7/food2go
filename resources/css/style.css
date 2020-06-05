@@ -120,12 +120,19 @@ h3 {
 /* LINKS */
 /* ---------------------------------------- */
 
-.city-features:link
-.city-features:active {
+a:link,
+a:visited {
   color: #e67e22;
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.3s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* ---------------------------------------- */
@@ -319,6 +326,11 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
@@ -349,4 +361,13 @@ header {
   line-height: 120%;
   vertical-align: middle;
   margin-top: 4px;
+}
+
+/* ---------------------------------------- */
+/* TESTIMONIALS */
+/* ---------------------------------------- */
+
+.section-testimonials {
+  background-image: url(/resources/css/images/back-customers.jpg);
+  background-size: cover;
 }
