@@ -254,6 +254,20 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile Navigation */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  font-size: 200%;
+  color: #fff;
+}
+
+
 /* Sticky Navigation */
 .sticky {
   position: fixed;
@@ -637,10 +651,34 @@ footer p {
 /* ANIMATIONS */
 /* ---------------------------------------- */
 
-/* .js--waypoint-1 {
-  opacity: 0;;
-} */
 
-/* .js--waypoint-1.animate__animated {
+/* features */
+.js--waypoint-1 {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.js--waypoint-1 .animate__fadeIn {
+  opacity: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* iphone */
+.js--waypoint-2 {
+  opacity: 0;
+}
+
+.js--waypoint-2 .animate__fadeIn {
+  opacity: 1;
+}
+
+/* cities */
+/* .js--waypoint-3 {
+  opacity: 0;
+}
+
+.js--waypoint-3 .animate__fadeIn {
   opacity: 1;
 } */

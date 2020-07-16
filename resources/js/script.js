@@ -65,7 +65,52 @@ $('a[href*="#"]')
 
   /* Animations on scroll  */
   $('.js--waypoint-1').waypoint(function(direction) {
-    $('.js--waypoint-1').addClass('animate__bounce');
-  });
+    $('.js--waypoint-1').addClass('animate__fadeIn');
+  },
+  {
+    offset: "50%",
+  }
+  );
+
+  $('.js--waypoint-2').waypoint(function(direction) {
+    $('.js--waypoint-2').addClass('animate__fadeInUp');
+  },
+  {
+    offset: "50%",
+  }
+  );
+
+  $('.js--waypoint-3').waypoint(function(direction) {
+    $('.js--waypoint-3').addClass('animate__shakeY');
+  },
+  {
+    offset: "50%",
+  }
+  );
+
+  $('.js--waypoint-4').waypoint(function(direction) {
+    $('.js--waypoint-4').addClass('animate__pulse');
+  },
+  {
+    offset: "50%",
+  }
+  );
+
+  /* Mobile Navigation */
+  $('.js--nav-icon').click(function() {
+
+    var nav  = $('.js--main-nav');
+    var icon = $('.js--nav-icon');
+
+    nav.slideToggle(200);
+    
+/*     if(icon.hasClass('menu')) {
+        icon.removeClass('menu');
+        icon.addClass('close');
+    } else {
+      icon.removeClass('close');
+      icon.addClass('menu');
+    } */
+  })
 
 });
